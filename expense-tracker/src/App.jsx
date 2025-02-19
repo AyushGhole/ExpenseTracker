@@ -13,7 +13,7 @@ const App = () => {
   const [editData, setEditData] = useState(null);
 
   useEffect(() => {
-    fetch("/api/transactions")
+    fetch("https://expense-tracker-backend-fm7r.vercel.app/api/transactions")
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched transactions:", data);
