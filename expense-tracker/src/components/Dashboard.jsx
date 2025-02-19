@@ -20,7 +20,7 @@ const Dashboard = ({ transactions = [] }) => {
 
   useEffect(() => {
     axios
-      .get(`/api/transactions/spending-insights/${currentMonth}`)
+      .get(`https://expense-tracker-backend-fm7r.vercel.app/api/transactions/spending-insights/${currentMonth}`)
       .then((res) => {
         console.log(res.data);
         setInsights(res.data);
