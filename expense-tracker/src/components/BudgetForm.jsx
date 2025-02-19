@@ -10,7 +10,7 @@ const BudgetForm = () => {
   useEffect(() => {
     const fetchBudgets = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/budgets");
+        const res = await axios.get("https://expense-tracker-backend-fm7r.vercel.app/api/budgets");
         console.log("Budgets Response:", res.data); // Debugging
 
         if (!Array.isArray(res.data)) {
@@ -31,7 +31,7 @@ const BudgetForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/budgets/set-budgets",
+        "https://expense-tracker-backend-fm7r.vercel.app/api/budgets/set-budgets",
         {
           category,
           amount,
