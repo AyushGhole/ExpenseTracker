@@ -6,7 +6,7 @@ import ExpenseChart from "./components/Chart";
 import CategoryPieChart from "./components/CategoryPieChart";
 import Dashboard from "./components/Dashboard";
 
-const API_URL = "http://localhost:5000/api/transactions";
+const API_URL = "https://expense-tracker-backend-fm7r.vercel.app/api/transactions";
 
 const App = () => {
   const [transactions, setTransactions] = useState([]);
