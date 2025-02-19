@@ -27,7 +27,7 @@ mongoose
 app.use("/api/transactions/", require("./routes/transactionRoutes"));
 app.use("/api/budgets/", budgetRoutes);
 
-app.get("/", (req, res) => {
+app.get("/hello", (req, res) => {
   res.send("Hello");
 });
 
