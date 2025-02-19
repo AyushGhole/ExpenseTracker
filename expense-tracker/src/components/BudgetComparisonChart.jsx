@@ -12,12 +12,12 @@ const BudgetComparisonChart = () => {
     const fetchData = async () => {
       try {
         // ✅ Fetch budgeted amounts
-        const budgetRes = await axios.get("http://localhost:5000/api/budgets");
+        const budgetRes = await axios.get("https://expense-tracker-backend-fm7r.vercel.app/api/budgets");
         const budgets = budgetRes.data;
 
         // ✅ Fetch actual spending
         const spendingRes = await axios.get(
-          `http://localhost:5000/api/transactions/spending/${currentMonth}`
+          `https://expense-tracker-backend-fm7r.vercel.app/api/transactions/spending/${currentMonth}`
         );
         const spending = spendingRes.data;
 
