@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://expense-tracker-frontend-mocha-five.vercel.app/"],
+    origin: ["https://expense-tracker-frontend-sand-omega.vercel.app/"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
